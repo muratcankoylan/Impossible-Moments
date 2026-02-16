@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use the Impossible Moments benchmark in your research, please cite it as below."
+title: "Impossible Moments: A Benchmark for Creative Constraint Satisfaction and Physical Reasoning in AI Systems"
+type: dataset
+version: "1.0"
+date-released: "2026-02-16"
+license: MIT
+repository-code: "https://github.com/muratcankoylan/impossible-moments"
+url: "https://github.com/muratcankoylan/impossible-moments"
+abstract: >-
+  Impossible Moments (IM) is a benchmark that evaluates AI systems on creative
+  constraint satisfaction under physical reasoning demands. It presents richly
+  narrated, physically grounded scenarios that appear unsolvable on first
+  inspection, requiring solvers to decompose familiar objects into raw physical
+  properties, reject seductive distractors, chain non-obvious insights, and
+  validate every step against the laws of physics. The benchmark spans six
+  solution statuses (Known-Solution, Contested, Open-Frontier, Paradox,
+  Metamorphic, Degenerate), twelve scenario categories, and five difficulty
+  tiers. Scenarios are created through a five-agent pipeline (Athena, Galileo,
+  Euler, Newton, Socrates) with full reasoning traces published for
+  transparency.
+keywords:
+  - AI benchmark
+  - creative reasoning
+  - physical reasoning
+  - constraint satisfaction
+  - functional fixedness
+  - multi-agent systems
+  - evaluation
+  - AGI
+authors:
+  - given-names: "Muratcan"
+    family-names: "Koylan"
+    orcid: ""
+    website: "https://muratcankoylan.com"
+    affiliation: "Independent Researcher"

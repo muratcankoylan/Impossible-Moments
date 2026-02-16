@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+.env
+.env.local
+
+# Dependencies
+node_modules/
+
+# IDE / Editor artifacts
+.specstory/
+.cursorindexingignore
+.cursor/
+.vscode/
+.idea/
+
+# Claude Code local config
+.claude/
+
+# Evaluation data (raw model outputs - large files)
+data/model_evaluations/*.json
+data/model_evaluations/*.jsonl
+
+# Archive (legacy batch files from generation process)
+archive/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.bak
