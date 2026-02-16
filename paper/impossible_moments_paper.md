@@ -63,3 +63,33 @@ The five-phase expert review pipeline for Open-Frontier scenarios. AI responses 
 ![Category Taxonomy](../assets/figures/figure_8_category_taxonomy.png)
 
 The twelve scenario categories, each testing a distinct cognitive signature. Categories range from spatial reasoning (The Locked Room) to scientific creativity (The Horizon Problem), covering functional fixedness breaking, systems thinking, theory of mind, scale-variant physics, frame-breaking, mechanistic reasoning, substitution reasoning, abstract constraint navigation, pattern recognition, and frontier invention.
+
+---
+
+## Scenario Examples
+
+The following illustrations demonstrate scenarios across the Solution Spectrum and difficulty tiers, showing how the benchmark tests different cognitive skills and expects different types of correct responses.
+
+### Scenario A: IM-0001 -- The Signal Fire (Tier 1: SPARK, KS-Multiple)
+
+![The Signal Fire](../assets/figures/scenario_signal_fire.png)
+
+A stranded hiker needs a signal fire but has no conventional ignition tools. The pack contains a 9V battery, fine steel wool, and a clear water bottle -- none are "fire-starting tools" in the canonical sense. Two independent solution paths exist: Joule heating (battery short-circuits through fine steel wool fibers, igniting in under 1 second) and cylindrical lens (water-filled bottle concentrates sunlight 20x onto tinder). The scenario tests substitution reasoning through functional decomposition -- the core skill of The Last Ingredient category. Distractor objects (paracord, compass, whistle) invite plausible but non-viable approaches.
+
+### Scenario B: IM-0063 -- The Blast Room (Tier 2: FRACTURE, KS)
+
+![The Blast Room](../assets/figures/scenario_blast_room.png)
+
+The benchmark's signature scenario. A bomb, a table, a chair, a banana, and 18 seconds. The window is at 2.4m -- apparently out of reach (standing reach: 2.1m + 0.5m jump = 2.6m, barely touching the ledge). The solution: the table is not furniture. It is a 0.75m elevation platform. Standing on the table, the window is easily within reach. The chair breaks the tempered glass. The banana is irrelevant. Three insights must chain together: re-contextualize the table, weaponize the chair, reject the distractor. Total escape time: 12 seconds, margin: 6 seconds.
+
+### Scenario C: IM-0226 -- The Gravity Cage (Tier 3: RUPTURE, PX)
+
+![The Gravity Cage](../assets/figures/scenario_gravity_cage.png)
+
+A Paradox (PX) scenario where the correct answer is to prove that escape is impossible. A sealed 2.5m steel cube with argon flooding. Every available tool -- rubber mallet (500N), cotton rope (800N), candle (80W) -- is calibrated to be insufficient by 3+ orders of magnitude against the 6mm A36 structural steel enclosure (678 kN shear threshold). The model must perform a systematic energy audit across all escape vectors (impact, shear, thermal, geometric) and conclude with a quantitative proof of impossibility. Models biased toward "finding solutions" will hallucinate physics; the correct response requires intellectual courage to declare impossibility with evidence.
+
+### Scenario D: IM-0405 -- The Heat Death Garden (Tier 5: IMPOSSIBLE, OF)
+
+![The Heat Death Garden](../assets/figures/scenario_heat_death_garden.png)
+
+An Open-Frontier scenario at the absolute ceiling of the benchmark. Can a perfectly sealed, perfectly insulated ecosystem sustain multicellular life for 100 years with zero external energy? The thermodynamic analysis reveals this is not forbidden: 500 GJ initial energy is sufficient, an ice phase-change buffer (10,000 kg ice = 3.34 GJ at 0C) absorbs all waste heat from a minimal 1W metabolic system, and entropy does not reach maximum in 100 years. But ecological stability over a century in a closed system has never been demonstrated. The problem sits precisely at the boundary where thermodynamic arguments alone cannot resolve it. A model that categorically declares "impossible" without calculation is as wrong as one that declares "possible" without addressing ecosystem fragility. This is where the benchmark reaches beyond evaluation into the frontier of human knowledge.

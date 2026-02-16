@@ -149,6 +149,10 @@ Here is a condensed version of **IM-0063: The Blast Room**, a Tier 2 (Fracture) 
 >
 > **Do you LIVE or DIE?**
 
+<p align="center">
+  <img src="assets/figures/scenario_blast_room.png" alt="The Blast Room -- IM-0063" width="800"/>
+</p>
+
 <details>
 <summary><strong>Reveal the solution</strong></summary>
 
@@ -167,6 +171,42 @@ The banana is irrelevant. A model that incorporates it into its escape plan is h
 **Difficulty profile:** `I3.D2.C2.B2.T3.X2` -- three insights (platform, tool, distractor rejection), moderate time pressure, one trap ("shelter behind the table" fails because 200 kPa confined overpressure is lethal regardless of a 15 kg pine table).
 
 </details>
+
+---
+
+## Scenarios Across the Spectrum
+
+The benchmark spans the full range from solvable to impossible. Here are four scenarios illustrating different solution statuses and difficulty tiers.
+
+### Known-Solution: The Signal Fire (Tier 1 -- SPARK)
+
+A stranded hiker with an injured ankle needs to signal a rescue helicopter before sunset. The pack has no matches, lighter, or ferro rod -- but it contains a 9V battery, fine steel wool, and a clear water bottle. Two independent ignition paths exist, both requiring the solver to see past the canonical function of each object.
+
+<p align="center">
+  <img src="assets/figures/scenario_signal_fire.png" alt="The Signal Fire -- IM-0001" width="800"/>
+  <br/>
+  <em>IM-0001: Two hidden ignition paths (Joule heating, cylindrical lens) among objects that "are not fire-starting tools."</em>
+</p>
+
+### Provably Impossible: The Gravity Cage (Tier 3 -- RUPTURE)
+
+A sealed 2.5m steel cube filling with argon gas. The correct answer is not escape -- it is a quantitative proof that escape is impossible. Every tool in the room is calibrated to be insufficient by 3+ orders of magnitude. The model must resist the urge to hallucinate a solution and instead demonstrate the intellectual rigor to prove impossibility.
+
+<p align="center">
+  <img src="assets/figures/scenario_gravity_cage.png" alt="The Gravity Cage -- IM-0226" width="800"/>
+  <br/>
+  <em>IM-0226: PX (Paradox) -- the correct answer is DIE, supported by force/energy analysis showing every escape vector fails by 1,000x+.</em>
+</p>
+
+### Open-Frontier: The Heat Death Garden (Tier 5 -- IMPOSSIBLE)
+
+Can a perfectly sealed ecosystem sustain multicellular life for 100 years with no external energy? The thermodynamics say "maybe" -- the energy budget works, the ice phase-change buffer holds temperature at 0C, and the entropy budget is not exhausted. But 100-year ecosystem stability has never been demonstrated. This is a genuine frontier problem where a novel AI response could constitute a real scientific contribution.
+
+<p align="center">
+  <img src="assets/figures/scenario_heat_death_garden.png" alt="The Heat Death Garden -- IM-0405" width="800"/>
+  <br/>
+  <em>IM-0405: OF (Open-Frontier) -- thermodynamically not forbidden, ecologically almost certainly impossible. The problem sits at the boundary of human knowledge.</em>
+</p>
 
 ---
 
@@ -248,7 +288,7 @@ impossible_moments/
 ├── CITATION.cff                    # Citation metadata
 │
 ├── assets/                         # Visual assets
-│   └── figures/                    # System diagrams and architecture visuals
+│   └── figures/                    # System diagrams and scenario illustrations
 │       ├── figure_1_system_architecture.png
 │       ├── figure_2_creation_pipeline.png
 │       ├── figure_3_solution_spectrum.png
@@ -256,7 +296,11 @@ impossible_moments/
 │       ├── figure_5_context_isolation.png
 │       ├── figure_6_scoring_architecture.png
 │       ├── figure_7_breakthrough_pipeline.png
-│       └── figure_8_category_taxonomy.png
+│       ├── figure_8_category_taxonomy.png
+│       ├── scenario_signal_fire.png     # IM-0001 (KS, Tier 1)
+│       ├── scenario_blast_room.png      # IM-0063 (KS, Tier 2)
+│       ├── scenario_gravity_cage.png    # IM-0226 (PX, Tier 3)
+│       └── scenario_heat_death_garden.png  # IM-0405 (OF, Tier 5)
 │
 ├── docs/                           # Documentation
 │   ├── framework.md                # Complete benchmark specification
