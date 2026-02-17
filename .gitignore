@@ -27,6 +27,10 @@ node_modules/
 data/model_evaluations/*.json
 data/model_evaluations/*.jsonl
 
+# Dataset (large generated files -- rebuild with: python scripts/build_dataset.py)
+dataset/impossible_moments.json
+dataset/impossible_moments.jsonl
+
 # Archive (legacy batch files from generation process)
 archive/
 

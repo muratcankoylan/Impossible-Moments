@@ -7,6 +7,7 @@
 [![Benchmark Version](https://img.shields.io/badge/version-1.0-green.svg)]()
 [![Scenarios](https://img.shields.io/badge/scenarios-420-orange.svg)]()
 [![Status](https://img.shields.io/badge/status-active_development-yellow.svg)]()
+[![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-FFD21E.svg?logo=huggingface)](https://huggingface.co/datasets/MuratcanKoylan/impossible-moments)
 [![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-blueviolet.svg)](https://claude.ai/claude-code)
 [![Hackathon](https://img.shields.io/badge/Anthropic_x_Cerebral_Valley-Hackathon-red.svg)]()
 
@@ -337,6 +338,16 @@ impossible_moments/
 │   ├── evaluation_protocol.md      # Complete evaluation methodology
 │   └── scoring_rubrics/            # Per-category and per-status rubrics
 │
+├── dataset/                        # Hugging Face-ready structured data
+│   ├── README.md                   # HF dataset card
+│   ├── impossible_moments.parquet  # Parquet (29 fields, all 420 scenarios)
+│   ├── impossible_moments.jsonl    # JSONL (one scenario per line)
+│   ├── impossible_moments.json     # JSON (full array)
+│   └── impossible_moments.csv      # CSV (key fields only)
+│
+├── scripts/                        # Build and utility scripts
+│   └── build_dataset.py            # Extract structured dataset from scenarios
+│
 ├── data/                           # Benchmark results and analysis
 │   └── model_evaluations/          # Results from evaluated models
 │
@@ -347,6 +358,29 @@ impossible_moments/
 ---
 
 ## Quick Start
+
+### Use as a Hugging Face Dataset
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("muratcankoylan/impossible-moments", split="test")
+
+# Get a scenario
+scenario = ds[62]  # IM-0063: The Blast Room
+print(scenario["prompt"])          # What to send to the model
+print(scenario["correct_answer"])  # Expected answer
+print(scenario["solution"])        # Full verified solution
+```
+
+Or load locally:
+
+```python
+import pandas as pd
+df = pd.read_parquet("dataset/impossible_moments.parquet")
+```
+
+### Evaluate a Model
 
 ### Evaluate a Model
 
