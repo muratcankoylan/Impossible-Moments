@@ -11,6 +11,8 @@
 [![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-blueviolet.svg)](https://claude.ai/claude-code)
 [![Hackathon](https://img.shields.io/badge/Anthropic_x_Cerebral_Valley-Hackathon-red.svg)]()
 
+**Dataset**: [huggingface.co/datasets/MuratcanKoylan/impossible-moments](https://huggingface.co/datasets/MuratcanKoylan/impossible-moments) | **GitHub**: [github.com/muratcankoylan/Impossible-Moments](https://github.com/muratcankoylan/Impossible-Moments)
+
 ---
 
 > *"The most revealing test of intelligence is not what you know, but what you do when everything you know says 'this cannot be done.'"*
